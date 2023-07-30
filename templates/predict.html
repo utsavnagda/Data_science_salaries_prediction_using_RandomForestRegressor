@@ -1,0 +1,26 @@
+<html>
+<body>
+    <div class="login">
+       <h1>FWI Prediction</h1>
+   
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}" method="post">
+         <input type="text" name="Job title" placeholder="Job title" required="required" /><br>
+         <input type="text" name="Employment Type" placeholder="Employment Type" required="required" /><br>
+         <input type="text" name="Experience Level" placeholder="Experience Level" required="required" /><br>
+         <input type="text" name="Expertise Level" placeholder="Expertise Level" required="required" /><br>
+         <input type="text" name="Salary Currency" placeholder="Salary Currency" required="required" /><br>
+         <input type="text" name="Company Location" placeholder="Company Location" required="required" /><br>
+         <input type="text" name="Employee Residence" placeholder="Employee Residence" required="required" /><br>
+         <input type="text" name="Company Size" placeholder="Company Size" required="required" /><br>
+         <input type="text" name="Year" placeholder="Year" required="required" /><br>
+   
+   
+   
+           <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       </form>
+    <h2>
+       THE Salary prediction is {{result}}
+    </h2>
+   <body>
+</html>

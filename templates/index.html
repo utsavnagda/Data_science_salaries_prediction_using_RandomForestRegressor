@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px black;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        p {
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            color: black;
+            text-align: justify;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        @keyframes example {
+            from {background-color: lightblue;}
+            to {background-color: white;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="{{ url_for('predict')}}">Welcome to My Website</a></h1>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
