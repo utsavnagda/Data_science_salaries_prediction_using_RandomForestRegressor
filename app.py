@@ -2,8 +2,8 @@ from flask import Flask, render_template, request,jsonify
 import pickle
 import pandas as pd
 
-processor =pickle.load(open("Random_forest_pipeline_model_evaluvation\model\column_transformer.pkl","rb"))
-model = pickle.load(open("Random_forest_pipeline_model_evaluvation/model/random_forest_regressor.pkl", "rb"))
+processor =pickle.load(open("./model/column_transformer.pkl","rb"))
+model = pickle.load(open("./model/random_forest_regressor.pkl", "rb"))
 
 app = Flask(__name__)
 
